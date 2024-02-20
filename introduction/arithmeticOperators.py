@@ -15,3 +15,19 @@ result6 = 13 % 4
 
 print("Power result", result5)
 print("Rest of division", result6)
+
+print("\nTests with operators for incrementing and decrementing.\n")
+
+print(some_integer)
+
+some_integer = some_integer + 1
+print(some_integer)
+
+some_integer += 1
+print(some_integer)
+
+some_integer = some_integer - 1
+print(some_integer)
+
+some_integer -= 1
+print(some_integer)
