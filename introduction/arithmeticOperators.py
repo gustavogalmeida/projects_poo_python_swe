@@ -10,3 +10,8 @@ print("Subtraction result", result2)
 print("Mutiplication result ", result3)
 print("Division result", result4)
 
+result5 = 2 ** 4
+result6 = 13 % 4
+
+print("Power result", result5)
+print("Rest of division", result6)
