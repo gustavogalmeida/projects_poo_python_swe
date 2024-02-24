@@ -24,7 +24,7 @@ elif average<3:
 else:
     result = 'FINAL EXAM'
 
-print('Avarage: ',average)
+print('Average: ',average)
 print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 print('      The result was: ', result)
 print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
