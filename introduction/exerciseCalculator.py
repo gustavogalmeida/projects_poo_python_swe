@@ -1,9 +1,9 @@
-# Welccalculator=Noneat greets the user and calls the calculate function.
+# Welcome function that greets the user and calls the calculate function.
 # The calculator function presents the available operations and prompts the user's choice.
 # It verifies if the chosen option is correct and performs the corresponding calculation.
 # Then, it asks the user if they want to calculate again, calling the calculate function again or ending the program.
 
-def wellcome():
+def welcome():
     print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
     print('      Wellcome to the calculator')
     print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
@@ -17,12 +17,13 @@ def operation():
           'Enter the operation to be performed: '))
     if (operation!=1 and operation!=2 and operation!=3 and operation!=4):
         print('Operation not supported!')
-        operation()
+        return
     else:
         firstNumber = float(input('Enter the first number: '))
         secondNumber = float(input('Enter the second number: '))
         result = calculator(firstNumber, secondNumber, operation)
-        print('The result is: ', result)
+        print('The result is:', result)
+        calculateAgain()
 
 def calculator(n1, n2, op):
     result = 0.0
@@ -36,6 +37,13 @@ def calculator(n1, n2, op):
         result = n1 * n2
     return result
 def calculateAgain():
-    return
+    again = str(input('Do you want to do a new operation? Yes (Y), No (N):'))
+    if again.upper() == 'Y':
+        operation()
+    elif again.upper() == 'N':
+        return
+    else:
+        print('Invalid option!')
+        calculateAgain()
 
-wellcome()
+welcome()
