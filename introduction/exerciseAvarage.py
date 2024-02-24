@@ -15,15 +15,16 @@ note1 = float(input('Enter your first note: '))
 note2 = float(input('Enter your second note: '))
 note3 = float(input('Enter your third note: '))
 
-avarage = (note1 + note2 + note3)/3
+average = (note1 + note2 + note3)/3
 
-if avarage>7:
+if average>7:
     result = 'APPROVED'
-elif avarage<3:
+elif average<3:
     result = 'DISAPPROVED'
 else:
     result = 'FINAL EXAM'
 
+print('Avarage: ',average)
 print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 print('      The result was: ', result)
 print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
